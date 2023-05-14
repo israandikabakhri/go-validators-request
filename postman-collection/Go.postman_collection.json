@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "628f0f9c-d756-409d-b3a4-716eeb3d257a",
+		"name": "Go - Validator Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25301062"
+	},
+	"item": [
+		{
+			"name": "go-validator-requests / create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nik\": \"123\",\r\n    \"nama\": \"xxx\",\r\n    \"tgl_lahir\": \"2001-09-02\",\r\n    \"waktu_kunjungan\": \"2023-05-14 12:10:31\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/penduduk/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"penduduk",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "go-validator-requests / update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nik\": \"123\",\r\n    \"nama\": \"israaaaaa\",\r\n    \"tgl_lahir\": \"2001-09-02\",\r\n    \"waktu_kunjungan\": \"2023-05-14 12:10:31\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/penduduk/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"penduduk",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
